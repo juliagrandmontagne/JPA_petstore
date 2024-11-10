@@ -72,10 +72,10 @@ public class App {
         entityManager.getTransaction().commit();
         } catch (Exception e) {
             e.printStackTrace();
-            // En cas d'erreur, on annule la transaction
+
             entityManager.getTransaction().rollback();
         } finally {
-            // Fermeture de l'EntityManager
+
             entityManager.close();
             managerFactory.close();
         }
