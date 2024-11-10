@@ -10,6 +10,7 @@ import java.util.Set;
 //on doit mettre en place le inheriance join pour l'enumeration
 @Inheritance(strategy = InheritanceType.JOINED)
 public class Product implements Serializable {
+    //creation des entité avec leurs propriétés
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;

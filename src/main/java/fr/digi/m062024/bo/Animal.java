@@ -9,6 +9,7 @@ import java.util.Set;
 @Table(name = "ANIMAL")
 @Inheritance(strategy = InheritanceType.JOINED)
 public class Animal {
+    //creation des entité avec leurs propriétés
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
@@ -39,7 +40,7 @@ public class Animal {
         return sb.toString();
     }
     /*
-     *getter et setter
+     *getter et setter id
      */
 
     public long getId() {
@@ -49,7 +50,9 @@ public class Animal {
     public void setId(long id) {
         this.id = id;
     }
-
+    /*
+     *getter et setter birth
+     */
     public LocalDateTime getBirth() {
         return birth;
     }
@@ -57,7 +60,9 @@ public class Animal {
     public void setBirth(LocalDateTime birth) {
         this.birth = birth;
     }
-
+    /*
+     *getter et setter Couleur
+     */
     public String getCouleur() {
         return couleur;
     }

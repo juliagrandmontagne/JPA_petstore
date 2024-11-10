@@ -9,8 +9,10 @@ import java.time.LocalDateTime;
 
 public class App {
     public static void main(String[] args) {
+        //creation de la bdd
         EntityManagerFactory managerFactory = Persistence.createEntityManagerFactory("bdd2");
         EntityManager entityManager = managerFactory.createEntityManager();
+        //remplissage de la bdd non fonctionelle
         try {
         entityManager.getTransaction().begin();
         PetStore petStore1 = new PetStore();
@@ -75,7 +77,7 @@ public class App {
 
             entityManager.getTransaction().rollback();
         } finally {
-
+            //fermeture memoire en fin de fonction (finally)
             entityManager.close();
             managerFactory.close();
         }

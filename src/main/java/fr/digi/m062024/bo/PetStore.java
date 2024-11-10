@@ -8,6 +8,7 @@ import java.util.Set;
 @Entity
 @Table(name = "PETSTORE")
 public class PetStore implements Serializable {
+    //creation des entité avec leurs propriétés
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
@@ -25,16 +26,17 @@ public class PetStore implements Serializable {
     /**
      * création des liaison
      */
-
+    //on crée une liaison 1to one pour respecter la cardinalité petstore qui possede une seule adresse
     @OneToOne
     @JoinColumn(name = "ID")
     private Adress adress;
 
-
+    //on crée une liaison one to many pour respecter la cardinalité petstore qui possede plusieurs animaux (normalment)
     @OneToMany(mappedBy = "petstore")
     private Set<Animal> animals;
 
-    @ManyToMany(mappedBy = "petStores") // Le mappedBy fait référence à l'attribut 'petStores' dans Product
+    //on crée une une liaison many to many les produit sont vendu dans plusieur petstore inversement
+    @ManyToMany(mappedBy = "petStores")
     private Set<Product> products;
 
     /**

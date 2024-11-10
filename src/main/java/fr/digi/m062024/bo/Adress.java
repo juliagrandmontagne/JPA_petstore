@@ -7,6 +7,7 @@ import java.io.Serializable;
 @Entity
 @Table(name = "ADRESS")
 public class Adress implements Serializable {
+    //creation des entité avec leurs propriétés
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
@@ -41,7 +42,7 @@ public class Adress implements Serializable {
     }
 
     /*
-     * Getter et setter
+     * Getter et setter id
      */
     public long getId() {
         return id;
@@ -50,7 +51,9 @@ public class Adress implements Serializable {
     public void setId(long id) {
         this.id = id;
     }
-
+    /*
+     *getter et setter number
+     */
     public long getNumber() {
         return number;
     }
@@ -58,7 +61,9 @@ public class Adress implements Serializable {
     public void setNumber(long number) {
         this.number = number;
     }
-
+    /*
+     *getter et setter street
+     */
     public String getStreet() {
         return street;
     }
@@ -66,7 +71,9 @@ public class Adress implements Serializable {
     public void setStreet(String street) {
         this.street = street;
     }
-
+    /*
+     *getter et setter zipcode
+     */
     public String getZipCode() {
         return zipCode;
     }
@@ -74,7 +81,9 @@ public class Adress implements Serializable {
     public void setZipCode(String zipCode) {
         this.zipCode = zipCode;
     }
-
+    /*
+     *getter et setter city
+     */
     public String getCity() {
         return city;
     }
