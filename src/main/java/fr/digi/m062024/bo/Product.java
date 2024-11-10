@@ -41,7 +41,7 @@ public class Product implements Serializable {
     public Product() {
     }
     /**
-     * redefinission de la methode to string pour visualiser les elements
+     * Redefinission de la methode to string pour visualiser les elements
      */
     @Override
     public String toString() {

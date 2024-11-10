@@ -8,7 +8,7 @@ import java.io.Serializable;
 
 @Entity
 @Table(name = "CAT")
-//on crée l'entité cat avec l'heritage de animal
+// on crée l'entité cat avec l'heritage de animal
 public class Cat extends Animal implements Serializable {
     //propriété specifique aux chat
     @Column(name = "CHIP_ID")

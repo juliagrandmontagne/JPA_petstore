@@ -77,7 +77,7 @@ public class App {
 
             entityManager.getTransaction().rollback();
         } finally {
-            //fermeture memoire en fin de fonction (finally)
+            //Fermeture memoire en fin de fonction (finally)
             entityManager.close();
             managerFactory.close();
         }

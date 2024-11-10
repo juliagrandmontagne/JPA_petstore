@@ -11,7 +11,7 @@ import java.io.Serializable;
 @Inheritance(strategy = InheritanceType.JOINED)
 public class Fish extends Animal implements Serializable {
     @Column(name = "LIVING_ENV")
-    //ici la propriété est une enumeration qui est une class a part car elle s'inscrit dans la strategie 1 table par classe / Joined
+    // ici la propriété est une enumeration qui est une class a part car elle s'inscrit dans la strategie 1 table par classe / Joined
     @Enumerated(EnumType.STRING)
     private LivingEnvironment livingEnvironement;
 

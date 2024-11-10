@@ -8,7 +8,7 @@ import java.util.Set;
 @Entity
 @Table(name = "PETSTORE")
 public class PetStore implements Serializable {
-    //creation des entité avec leurs propriétés
+    // creation des entité avec leurs propriétés
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
@@ -40,7 +40,7 @@ public class PetStore implements Serializable {
     private Set<Product> products;
 
     /**
-     * methode to string
+     *  methode to string
      */
     @Override
     public String toString() {
