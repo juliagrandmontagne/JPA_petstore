@@ -82,7 +82,7 @@ public class Adress implements Serializable {
         this.zipCode = zipCode;
     }
     /*
-     *getter et setter city
+     *getter et setter CITY
      */
     public String getCity() {
         return city;
