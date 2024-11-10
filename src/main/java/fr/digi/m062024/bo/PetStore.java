@@ -23,6 +23,7 @@ public class PetStore implements Serializable {
      */
     public PetStore() {
     }
+
     /**
      * création des liaison
      */
@@ -40,7 +41,7 @@ public class PetStore implements Serializable {
     private Set<Product> products;
 
     /**
-     *  methode to string
+     * methode to string
      */
     @Override
     public String toString() {

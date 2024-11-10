@@ -51,6 +51,7 @@ public class Adress implements Serializable {
     public void setId(long id) {
         this.id = id;
     }
+
     /**
      * getter et setter number
      */
@@ -61,8 +62,9 @@ public class Adress implements Serializable {
     public void setNumber(long number) {
         this.number = number;
     }
+
     /**
-     *getter et setter street
+     * getter et setter street
      */
     public String getStreet() {
         return street;
@@ -71,8 +73,9 @@ public class Adress implements Serializable {
     public void setStreet(String street) {
         this.street = street;
     }
+
     /**
-     *getter et setter zipcode
+     * getter et setter zipcode
      */
     public String getZipCode() {
         return zipCode;
@@ -81,8 +84,9 @@ public class Adress implements Serializable {
     public void setZipCode(String zipCode) {
         this.zipCode = zipCode;
     }
+
     /**
-     *getter et setter CITY
+     * getter et setter CITY
      */
     public String getCity() {
         return city;

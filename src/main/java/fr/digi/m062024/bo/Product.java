@@ -14,14 +14,14 @@ public class Product implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
-    @Column(name ="CODE")
+    @Column(name = "CODE")
     private String code;
-    @Column(name ="LABEL")
+    @Column(name = "LABEL")
     private String label;
-    @Column(name ="TYPE")
+    @Column(name = "TYPE")
     @Enumerated(EnumType.STRING)
     private ProdType ProdType;
-    @Column(name ="PRICE")
+    @Column(name = "PRICE")
     private double price;
 
     /**
@@ -40,6 +40,7 @@ public class Product implements Serializable {
      */
     public Product() {
     }
+
     /**
      * Redefinission de la methode to string pour visualiser les elements
      */
@@ -54,6 +55,7 @@ public class Product implements Serializable {
         sb.append('}');
         return sb.toString();
     }
+
     /**
      * Getter et setter id
      */
@@ -64,6 +66,7 @@ public class Product implements Serializable {
     public void setId(long id) {
         this.id = id;
     }
+
     /**
      * Getter et setter code
      */
@@ -74,6 +77,7 @@ public class Product implements Serializable {
     public void setCode(String code) {
         this.code = code;
     }
+
     /**
      * Getter et setter label
      */
@@ -84,6 +88,7 @@ public class Product implements Serializable {
     public void setLabel(String label) {
         this.label = label;
     }
+
     /**
      * Getter et setter type
      */
@@ -94,6 +99,7 @@ public class Product implements Serializable {
     public void setProdType(ProdType ProdType) {
         this.ProdType = ProdType;
     }
+
     /**
      * Getter et setter price
      */

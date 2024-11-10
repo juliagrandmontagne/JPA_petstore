@@ -20,14 +20,16 @@ public class Animal {
     @ManyToOne
     @JoinColumn(name = "ID")
     private PetStore petstore;
+
     /**
-     *constructeur vide pour permetrre a java de créer la bdd
+     * constructeur vide pour permetrre a java de créer la bdd
      */
 
     public Animal() {
     }
+
     /**
-     *to string
+     * to string
      */
 
     @Override
@@ -39,8 +41,9 @@ public class Animal {
         sb.append('}');
         return sb.toString();
     }
+
     /**
-     *getter et setter id
+     * getter et setter id
      */
 
     public long getId() {
@@ -50,8 +53,9 @@ public class Animal {
     public void setId(long id) {
         this.id = id;
     }
+
     /**
-     *getter et setter birth
+     * getter et setter birth
      */
     public LocalDateTime getBirth() {
         return birth;
@@ -60,8 +64,9 @@ public class Animal {
     public void setBirth(LocalDateTime birth) {
         this.birth = birth;
     }
+
     /**
-     *getter et setter Couleur
+     * getter et setter Couleur
      */
     public String getCouleur() {
         return couleur;
